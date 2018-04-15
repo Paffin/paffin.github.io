@@ -13,7 +13,7 @@
             <div class="main-header">
                 <div class="header__logo"><h1><a href="/">ChopCart</a></h1></div>
                 <div class="header__control"><a href="#" class="reviews">Reviews</a></div>
-                <div class="header__inputs"><button type="button" class="btn btn-filled"><span class="qorder">Contact an operator</span></button></div>
+                <div class="header__inputs"><button type="button" class="btn btn-filled" data-toggle="modal" data-target="#modaloperator"><span class="qorder">Contact an operator</span></button></div>
                 <div class="header__buttons">
                     <button type="button" class="btn btn-dark">Profile</button>
                     <button type="button" class="btn btn-dark">Cart</button>
@@ -24,6 +24,76 @@
     </div>
 </div>
 </section>
+
+<!--Модалка чата с оператором -->
+<div class="modal fade" id="modaloperator" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" >
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="popup popup--contacts">
+                <button class="close" data-dismiss="modal" aria-label="Close"><span>&times;</span><span></span></button>
+                <div class="popup__left"><div class="popup__header">
+                    <span>Contact us</span>
+                </div>
+                    <div class="popup__social">
+                        <a class="btn  btn--skype" href="skype:dving-support?chat">
+                            <span class="icon  icon--skype"></span>
+                            <span class="btn__text">Skype</span>
+                        </a>
+                        <a class="btn  btn--discord" href="https://discord.gg/FcCDYBJ">
+                            <span class="icon  icon--discord"></span>
+                            <span class="btn__text">Discord</span>
+                        </a>
+                        <a class="btn  btn--whatsapp" href="https://api.whatsapp.com/send?phone=79654255682">
+                            <span class="icon  icon--whatsapp"></span>
+                            <span class="btn__text">WhatsApp</span>
+                        </a>
+                        <a class="btn  btn--telegram" href="https://t.me/DVING_support">
+                            <span class="icon  icon--telegram"></span>
+                            <span class="btn__text">Telegram</span>
+                        </a>
+                        <a class="btn  btn--email" href="mailto:support@dving.net">
+                            <span class="icon  icon--email"></span>
+                            <span class="btn__text">Email</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="popup__right">
+                    <form>
+                        <div class="popup__header">
+                            <span>Contact an operator</span>
+                        </div>
+                        <div class="form-field">
+                            <div class="select">
+                                <select class="select__input" name="accountType">
+                                    <option value="skype">In Skype</option>
+                                    <option value="phone">Call me</option>
+                                    <option value="email">Email</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-field">
+                            <label for="accountId">
+                                <span>Login</span></label>
+                            <input type="text" name="accountId" value="" class="input">
+                        </div>
+                        <div class="form-field">
+                            <label for="message">
+                                <span>Which services are you interested in?</span>
+                            </label>
+                            <textarea name="message" class="textarea"></textarea>
+                        </div>
+                        <button class="btn btn--centered btn--filled">
+                            <span>Submit</span>
+                            <span></span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- -->
 
 <section class="category__section">
     <div class="container pt-5">
@@ -88,6 +158,13 @@
         </div>
     </div>
 </section>
+
+
+
+
+
 <script src="js/main.js"></script>
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
 </body>
 </html>
