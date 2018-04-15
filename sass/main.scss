@@ -211,13 +211,16 @@ ol {
   font-weight: 700;
 }
 .a-category {
-  color: #e53c3c;
+  color: #fff;
   font-size: 18px;
   border: 1px solid;
   margin-right: 10px;
   font-weight: bold;
   margin-bottom: 10px;
+  -webkit-transition: opacity .25s ease-out;
+  transition: opacity .25s ease-out;
 }
 .a-category:hover{
-  color: #fff;
+  color: #e53c3c;
+  opacity: .9;
 }
