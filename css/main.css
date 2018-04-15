@@ -17,9 +17,10 @@ body {
   font-size: 14px;
   direction: ltr;
   overflow-x: hidden;
-  /* background: linear-gradient(to bottom right, #080f1b, #4B2E88); */
-  background: url("../img/bg.jpg") no-repeat, repeat scroll center center;
-  background-size: cover; }
+  background: linear-gradient(to bottom right, #080f1b, #4B2E88);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
 
 /*Шапка сайта */
 .main-header {
@@ -677,3 +678,28 @@ label, legend {
 .btn--centered {
   display: block;
   margin: 0 auto; }
+
+.games__item img {
+  width: 100%;
+  -webkit-transition: border-color .25s ease-out;
+  -o-transition: border-color .25s ease-out;
+  transition: border-color .25s ease-out; }
+
+.games__item:hover {
+  opacity: .8; }
+
+.games__item, .games__item img {
+  position: relative;
+  border-radius: 5px; }
+
+a img, fieldset, img {
+  border: none; }
+
+iframe, img {
+  display: block; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+/* главная фигня под менюшкой */
