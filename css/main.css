@@ -17,7 +17,9 @@ body {
   font-size: 14px;
   direction: ltr;
   overflow-x: hidden;
-  background: linear-gradient(to bottom right, #080f1b, #4B2E88); }
+  /* background: linear-gradient(to bottom right, #080f1b, #4B2E88); */
+  background: url("../img/bg.jpg") no-repeat, repeat scroll center center;
+  background-size: cover; }
 
 /*Шапка сайта */
 .main-header {
